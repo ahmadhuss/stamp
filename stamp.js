@@ -5,9 +5,11 @@ if (!title) {
 }
 
 $(document).ready(function () {
+    console.log('ready');
     $('#stamp-name').text(title);
     new CircleType(document.getElementById('stamp-name'));
     $(window).on('load', async function () {
+        console.log('load');
         if (title) {
             let element = $(".image-stamp"); // global variable
             console.log(element);
